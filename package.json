@@ -31,7 +31,7 @@
     "yaml-js": "^0.2.3"
   },
   "scripts": {
-    "build-ergogen": "cd node_modules/ergogen && yarn install && yarn run build && cp dist/ergogen.js ../../public/dependencies/ergogen.js",
+    "build-ergogen": "cd node_modules/ergogen && yarn install && yarn run build && cd ../.. && cp node_modules/ergogen/dist/ergogen.js public/dependencies/ergogen.js",
     "postinstall": "yarn run build-ergogen",
     "start": "react-scripts start",
     "build": "react-scripts build",
